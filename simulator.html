@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Smart Traffic Scheduler — Simulator</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="simulator-page" style="display:flex;flex-direction:column;min-height:100vh">
   <!-- Top Bar -->
   <header class="topbar">
     <div class="title">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--primary)"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        style="color:var(--primary)">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+      </svg>
       <h1>Smart Traffic Scheduler</h1>
     </div>
     <a href="index.html" class="btn btn-ghost btn-sm">← Home</a>
@@ -83,10 +89,18 @@
           <div id="vehicle" class="vehicle" style="display:none"></div>
         </div>
         <div class="dir-statuses">
-          <div class="dir-status status-north"><div class="dir-dot red"></div><span class="text-muted">NORTH:</span><span class="dir-state">RED</span></div>
-          <div class="dir-status status-south"><div class="dir-dot red"></div><span class="text-muted">SOUTH:</span><span class="dir-state">RED</span></div>
-          <div class="dir-status status-east"><div class="dir-dot red"></div><span class="text-muted">EAST:</span><span class="dir-state">RED</span></div>
-          <div class="dir-status status-west"><div class="dir-dot red"></div><span class="text-muted">WEST:</span><span class="dir-state">RED</span></div>
+          <div class="dir-status status-north">
+            <div class="dir-dot red"></div><span class="text-muted">NORTH:</span><span class="dir-state">RED</span>
+          </div>
+          <div class="dir-status status-south">
+            <div class="dir-dot red"></div><span class="text-muted">SOUTH:</span><span class="dir-state">RED</span>
+          </div>
+          <div class="dir-status status-east">
+            <div class="dir-dot red"></div><span class="text-muted">EAST:</span><span class="dir-state">RED</span>
+          </div>
+          <div class="dir-status status-west">
+            <div class="dir-dot red"></div><span class="text-muted">WEST:</span><span class="dir-state">RED</span>
+          </div>
         </div>
       </div>
 
@@ -106,7 +120,16 @@
         <div class="task-table-wrap">
           <table>
             <thead>
-              <tr><th>Name</th><th>Type</th><th>Dir</th><th>Arrive</th><th>Burst</th><th>Deadline</th><th>Wait</th><th></th></tr>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Dir</th>
+                <th>Arrive</th>
+                <th>Burst</th>
+                <th>Deadline</th>
+                <th>Wait</th>
+                <th></th>
+              </tr>
             </thead>
             <tbody id="task-tbody"></tbody>
           </table>
@@ -130,4 +153,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
